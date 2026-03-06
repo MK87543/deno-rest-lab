@@ -4,5 +4,5 @@ import { hello } from "../service.ts";
 Deno.test("hello returns correct message", () => {
   const result = hello("World");
 
-  assertEquals(result, "Hello World");
+  assertEquals(result, "Hello ein test World");
 });
