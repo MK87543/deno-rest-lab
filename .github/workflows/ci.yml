@@ -16,5 +16,11 @@ jobs:
         with:
           deno-version: v2.x
 
+      - name: Start Server
+        run: deno run --allow-net main.ts &
+        
+      - name: Wait for Server
+        run: sleep 2
+
       - name: Run Tests
         run: deno test --allow-net
