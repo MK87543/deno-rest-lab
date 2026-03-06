@@ -11,4 +11,15 @@ router.get("/hello/:name", (ctx) => {
   };
 });
 
+router.get("/time", (ctx) => {
+  ctx.response.body = {
+    time: new Date(),
+  };
+});
+
+router.post("/echo", async (ctx) => {
+  const body = await ctx.request.body.json();
+  ctx.response.body = body;
+});
+
 export default router;
