@@ -1,5 +1,5 @@
 {
-  "version": "5",
+  "version": "2.5.0",
   "specifiers": {
     "jsr:@oak/commons@1": "1.0.1",
     "jsr:@std/assert@1": "1.0.19",
